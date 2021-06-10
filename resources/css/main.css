@@ -1,0 +1,681 @@
+body {
+  background-color: #ffffe0;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+ul li a {
+  color: black;
+}
+
+ul li a:hover {
+  color: black;
+  opacity: 0.8;
+}
+
+.inquiry {
+  background-color: #982531 !important;
+  border-color: #982531;
+  min-width: 170px;
+}
+
+.section-margin {
+  margin-top: 250px;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  float: left;
+  margin-left: -5px;
+  z-index: 1;
+}
+
+#menu {
+  background-color: #ffffe0;
+  z-index: 2;
+}
+
+#menu ul {
+  height: 80px;
+}
+
+.logo-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  float: left;
+  /* float: right; */
+}
+
+.top-tab-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 100px;
+  z-index: 2;
+  float: right;
+  background: #ffffe0;
+}
+
+/* 
+  ヘッダーエリア ここから
+ */
+
+header p {
+  font-size: 12px;
+}
+
+header .tel {
+  font-size: 20px;
+}
+
+header .inquiry {
+  height: 80%;
+}
+
+/* 
+  ヘッダーエリア ここまで
+ */
+
+/* 
+  ナビゲーションエリア ここから
+ */
+
+.img-wrap {
+  width: 100%;
+  position: relative;
+  height: 70%;
+  object-fit: contain;
+}
+
+.img-wrap img {
+  width: 100%;
+  position: absolute;
+  margin-bottom: 10px;
+  height: 80%;
+  object-fit: fill;
+}
+
+.nav {
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-menu::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-menu:hover {
+  cursor: pointer;
+}
+
+.nav-menu:hover::after {
+  /* width: 50%; */
+  transform: scale(1, 1);
+}
+/* 
+  ナビゲーションエリア ここまで
+ */
+
+/* 
+  タブコンテンツセクション ここから
+ */
+.main-navbar {
+  background: #ffffff;
+  width: 33%;
+  cursor: pointer;
+  border: 1px solid #e6e6fa;
+  border-radius: 5px;
+}
+
+.main-navbar-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  background-color: #c9bc98;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.main-navbar-bottom {
+  height: 75%;
+  background-color: #ffffff;
+  padding: 30px;
+}
+.main-navbar-bottom p {
+  color: #c9bc98;
+  font-size: 20px;
+}
+
+.tab-content {
+  height: 250px;
+}
+
+.tab-content .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* 
+  タブコンテンツセクション ここまで
+ */
+
+/* 
+  コーディネイトセクション ここから
+ */
+#section-coodinate .nav-tabs {
+  border-bottom: 0;
+}
+
+#section-coodinate .shop-title {
+  font-size: 16px;
+  background: #c9bc98;
+  color: #ffffff;
+  font-weight: bold;
+  height: 50px;
+}
+
+.cordinate-item {
+  height: 500px;
+  width: 32%;
+}
+
+.cordinate-item .content {
+  height: 75%;
+  background: gainsboro;
+}
+
+.cordinate-item .content img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cordinate-item .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  background: #c9bc98;
+  color: white;
+}
+
+.cordinate-item .date {
+  color: #c9bc98;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}
+/* 
+  コーディネイトセクション ここまで
+ */
+
+/* 
+  サービスセクション ここから
+ */
+#section-service .title {
+  font-size: 28px;
+  color: #626262;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+}
+
+#section-service .title .right {
+  font-size: 20px;
+}
+
+#section-service .message {
+  font-size: 16px;
+  background: #c9bc98;
+  color: #ffffff;
+  font-weight: bold;
+  height: 50px;
+}
+
+#section-service .service-item {
+  height: 500px;
+  width: 32%;
+}
+
+#section-service .service-item .content {
+  height: 50%;
+  background: gainsboro;
+}
+
+#section-service .service-item .content img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#section-service .service-item .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  background: #c9bc98;
+  color: white;
+  font-size: 15px;
+}
+
+#section-service .service-item .detail {
+  height: 40%;
+  font-size: 14px;
+}
+/* 
+  サービスセクション ここまで
+ */
+
+/* 
+  着物レンタルセクション ここから
+ */
+#section-rental .title,
+.sub {
+  font-size: 28px;
+  color: #626262;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+}
+
+#section-rental .sub {
+  font-size: 20px;
+}
+
+#section-rental section div {
+  height: 300px;
+}
+
+#section-rental .rental-img {
+  width: 40%;
+  background: gainsboro;
+  overflow: hidden;
+}
+
+#section-rental img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#section-rental .rental-detail {
+  width: 60%;
+}
+
+#section-rental .rental-detail-title {
+  height: 10%;
+  color: #b99739;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#section-rental .rental-detail-exp {
+  height: 90%;
+  font-size: 15px;
+}
+/* 
+  着物レンタルセクション ここまで
+ */
+
+/* 
+  コンセプトセクション ここから
+ */
+#section-concept .title,
+.sub {
+  font-size: 28px;
+  color: #626262;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+}
+
+#section-concept .sub {
+  font-size: 20px;
+}
+
+#section-concept section div {
+  height: 200px;
+}
+
+#section-concept .concept-img {
+  width: 40%;
+  background: gainsboro;
+  overflow: hidden;
+}
+
+#section-concept img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#section-concept .concept-detail {
+  width: 60%;
+}
+
+#section-concept .concept-detail-title {
+  height: 10%;
+  color: #b99739;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#section-concept .concept-detail-exp {
+  height: 90%;
+  font-size: 15px;
+}
+/* 
+  コンセプトセクション ここまで
+ */
+
+/* 
+  店舗セクション ここから
+ */
+#section-shop section {
+  height: 350px;
+}
+
+#section-shop .title,
+.sub {
+  font-size: 28px;
+  color: #626262;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+}
+
+#section-shop .sub {
+  font-size: 20px;
+}
+
+#section-shop section .shop-asakusa {
+  height: 250px;
+}
+
+#section-shop section .shop-ginza {
+  height: 350px;
+}
+
+#section-shop section .shop-ginza .text {
+  font-size: 15px;
+}
+
+#section-shop .shop-info {
+  width: 50%;
+}
+
+#section-shop .shop-info .title {
+  height: 10%;
+  color: #b99739;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#section-shop .shop-info .detail {
+  height: 90%;
+}
+
+#section-shop .shop-info .detail table {
+  width: 100%;
+  color: #626262;
+}
+
+#section-shop .shop-info .detail table tr {
+  height: 30px;
+}
+
+#section-shop .shop-info .detail table th {
+  width: 20%;
+}
+
+#section-shop .shop-info .detail table td {
+  width: 80%;
+}
+
+#section-shop .shop-info .detail table hr {
+  border-color: #84a2d4;
+}
+
+#section-shop .concept-img {
+  width: 50%;
+  overflow: hidden;
+}
+
+#section-shop .concept-img iframe {
+  width: 100%;
+}
+/* 
+  店舗セクション ここまで
+ */
+
+/* 
+  はんなりの特徴セクション ここから
+ */
+#section-feature .title,
+.sub,
+.detail {
+  font-size: 28px;
+  color: #626262;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+    "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: bold;
+}
+
+#section-feature .sub {
+  font-size: 20px;
+}
+
+#section-feature section {
+  margin-bottom: 80px;
+}
+
+#section-feature section div {
+  height: 350px;
+}
+
+#section-feature .feature-img {
+  width: 40%;
+  overflow: hidden;
+}
+
+#section-feature img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#section-feature .feature-detail {
+  width: 60%;
+}
+
+#section-feature .feature-detail-title {
+  height: 10%;
+  color: #b99739;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#section-feature .feature-detail-exp {
+  height: 90%;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#section-feature ul li {
+  height: 100px;
+  background: #b02c3a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#section-feature .link-box {
+  position: relative;
+}
+
+#section-feature .link-box a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/* 
+  はんなりの特徴セクション ここまで
+ */
+
+/* 
+  フッター ここから
+ */
+footer .text-aria {
+  height: 300px;
+  padding: 70px 0;
+  background: #ffffff;
+  font-size: 15px;
+  color: #626262;
+}
+
+.footer-guide {
+  background-image: url("../img/footer/shoji.jpg");
+  height: 1000px;
+}
+
+.footer-guide .top,
+.bottom {
+  height: 50%;
+}
+
+.footer-guide .bottom {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+footer table tr {
+  height: 100px;
+  padding-bottom: 25px;
+}
+
+footer table td {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+footer table td .inquiry {
+  height: 80px;
+  font-size: 24px;
+  width: 370px;
+}
+
+footer ul li a {
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+footer ul li a::after {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+}
+
+footer ul li a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  color: #ffffff;
+  background: #ffffff;
+}
+
+#copyright {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#page_top {
+  height: 50px;
+  font-size: 40px;
+  position: fixed;
+  right: 15px;
+  bottom: 75px;
+  z-index: 9999;
+  text-align: center;
+  width: 40px;
+  background: rgba(20, 24, 34, 0.7);
+}
+
+#page_top a {
+  color: #ffffff;
+}
+
+#footer_fixed {
+  height: 99px;
+  /* display: block; */
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#footer_fixed table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer_fixed tr {
+  height: 50px;
+}
+
+#footer_fixed td {
+  width: 25%;
+  font-size: 20px;
+  height: 100%;
+}
+
+#footer_fixed td a {
+  font-size: 15px;
+}
+
+#footer_fixed td .inquiry {
+  width: 100%;
+  font-size: 15px;
+  height: auto;
+}
+
+#footer_fixed .legal {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* 
+  フッター ここまで
+ */
